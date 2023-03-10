@@ -1,0 +1,212 @@
+<!-- This contains the page information - <head> sets the rules of the page for example content="width=device-width,initial scale=1.0" means that the page will try and scale to any device to the parameters set. --> 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial scale=1.0">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- The body of the page is where all the content goes -->
+<body>
+  <!-- I have set this div class because the background image for uber eats does not cover the whole website so i am using div class = "background" to set the parameters of what content i want the image to be over -->
+<div class="background"> 
+<!-- This is my header and this is the information i want to always be at the top of the screen so i have gave it an ID -->
+<header id = header> 
+<!-- span style is used to insert the menu icon and size it -->
+<span style='font-size:20px;' id="menuicon">	&#9776;</span>
+<!-- This section is how i imported the Logo image and created/ID'd the buttons -->
+<img src="UberLogo.png" img id="UberLogo">
+  <button id="Signup" button type="button"> <b>Sign up</b> </button>
+  <button id="Login" button type="button"> <b>Log in</b> </button>
+</header> <!-- end of header -->
+
+<!-- First Header with a ID so i can style it in CSS -->
+<h1 id="orderfoodtoyourdoor"> Order food to your door</h1> 
+  <!-- Form class has been used because i needed to create a input type: text so i could input a delivery address i gave this an ID   -->
+  <form class="address">
+    <!-- Placeholder  "Enter delivery address means that it will have these words showing in the box until something else is entered -->
+    <input type="text" id="address" placeholder="Enter delivery address" >
+  </form> <!-- End of form -->
+  <!-- This section is my drop down menu, with IDs so they could be styled in CSS, each option is a different value -->
+  <select name="Delivery" id="delivery">
+      <option value="DeliverNow"> <b>Deliver now</b>   </option>
+      <option value="ScheduleForLater"><b>Schedule for later</b></option>
+  </select>
+
+<!-- My 3rd button with ID so i could style it in CSS --> 
+<button id="Findfood" button type="button"><b>Find Food</b> </button>
+
+<!-- a href is used to enter a link into the <p> section i want to be - i have linked it to the sign in page -->
+<p id= "signin"><a href="https://auth.uber.com/v2/?breeze_local_zone=dca23&next_url=https%3A%2F%2Fwww.ubereats.com%2Flogin-redirect%2F%3Fcampaign%3Dsignin_universal_link%26guest_mode%3Dfalse%26marketing_vistor_id%3D7f87c3e2-9bf0-4f73-9fdc-5261596c3ab8%26redirect%3D%252Fgb&state=tGaKs7jjyTfSyRl8cuiHQW0e5qY1LFxg56_oOI1zjMM%3D&x-uber-did=d4dd8d2d-7cc1-4f58-b527-99051cfea8a8" id="blacklink">Sign in</a> for your recent addresses 
+  </p>
+</div> <!-- The end of my background Div so the image no longer applies to the other content--> 
+
+
+<!-- This Div class has been given to all 3 of my pictures importing them so i can edit the sizes together and then i have created seperate ID's so i could change the positioning slightly to get them in the right place, all images have been saved to replit then imported via img src --> 
+<div class = "threepictures">
+<img src="FeedEmployees.png" id="FeedEmployees">
+<img src="YourRestaurant.png" id="YourRestaurant">
+<img src="DeliverwithUber.png" id="DeliverwithUber">
+</div> <!-- This is the end of my three pictures Div -->
+
+
+<!-- These h1 tags are all used for the captions underneath my pictures all with seperate ids to be edited slightly like positioning  -->
+<h1 id = "feed">Feed your employees</h1>
+<h1 id = "your">Your Restaurant - delivered</h1>
+<h1 id = "del">Deliver with Uber Eats</h1>
+
+
+<!-- This section i have used a <p> tag to create wording underneath the captions then i have used a href to copy each of the links. I have also give the link ID "blacklink" because its the CSS ID i have used to edit all the links with a black underline look -->
+<p id = "create"><a href="https://www.uber.com/gb/en/business/solutions/eats/overview/" id="blacklink">
+      Create a business account</a></p>
+  <p id = "add"><a href="https://merchants.ubereats.com/gb/en/s/signup/" id="blacklink">
+      Add your restaurant</a>
+  </p>
+<p id = "todel"><a href="https://www.uber.com/gb/en/deliver/" id="blacklink">
+      Sign up to deliver</a>
+  </p>
+
+
+<!--  Another H1 used as a header  -->
+<h1 id= "near"> Cities near me</h1>
+
+
+<!-- Another link within the webpage using a href and the "blacklink ID" -->
+<p id = "cities"><a href="https://www.ubereats.com/gb/location" id="blacklink">View all 500+ cities</a>
+</p>
+
+<!-- Iframe src has allowed me to import a live map onto the website. The link is what i used to embed it onto my website after i found layout of the map. I have given it an ID so i can edit the size of it  -->
+ <iframe src ="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5129957.694692723!2d-2.2917283932361046!3d54.95916215988011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1668025961261!5m2!1sen!2suk" id="map"></iframe>
+
+
+<!-- This is an Unordered List - i have used unordered list so that they are not numbered and not in a specific order like a method is. Them removed the bullet points in CSS. I have give them all the ID "black" because they needed styling so they had no underline feature and stayed to the color black. I used the ID "black" to do all of these.  -->
+<ul id = "one">
+  <li><a href = "https://www.ubereats.com/gb/city/aberdeen-sct" id="black">Aberdeen</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/belfast-nir" id="black">Belfast</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/birmingham-eng" id="black">Birmingham,UK</a></li>   
+  <li><a href = "https://www.ubereats.com/gb/city/brighton-and-hove-eng" id="black">Brighton and Sussex</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/cambridge-eng" id="black">Cambridge and East Anglia</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/cardiff-wls" id="black">Cardiff</a></li>
+</ul>
+<ul id = "two"> <!-- My second unordered list with same stylings,links and IDs -->
+  <li><a href = "https://www.ubereats.com/gb/city/edinburgh-sct" id="black">Edinburgh</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/glasgow-sct" id="black">Glasgow</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/kingston-upon-hull-eng" id="black">Hull</a></li>   
+  <li><a href = "https://www.ubereats.com/gb/city/leeds-eng" id="black">Leeds</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/leicester-eng" id="black">Leicester</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/london-eng" id="black">London</a></li>
+</ul>
+<ul id = "three"> <!-- My third unordered list with same stylings,links and IDs -->
+  <li><a href = "https://www.ubereats.com/gb/city/manchester-eng" id="black">Manchester</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/liverpool-eng" id="black">Merseyside</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/newcastle-upon-tyne-eng" id="black">North East,UK</a></li>   
+  <li><a href = "https://www.ubereats.com/gb/city/central-milton-keynes-eng" id="black">Northampton and Milton Keynes</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/nottingham-eng" id="black">Nottingham</a></li>
+  <li><a href = "https://www.ubereats.com/gb/city/oxford-eng" id="black">Oxford,UK</a></li>
+</ul>
+
+<ul id="four"> <!-- My fourth unordered list with same stylings,links and IDs -->
+ <li> <a href = "https://www.ubereats.com/gb/city/sheffield-eng" id="black">Sheffield</a> </li>
+ <li> <a href = "https://www.ubereats.com/gb/city/portsmouth-eng" id="black">South coast, UK</a></li>
+ <li> <a href = "https://www.ubereats.com/gb/city/bristol-eng" id="black">South West, UK</a></li>
+ <li> <a href = "https://www.ubereats.com/gb/city/stoke-on-trent-eng" id="black">Stoke</a></li>
+</ul>
+
+<h1 id = "countries">Countries with Uber Eats</h1> <!-- I used h1 for another header-->
+
+<!-- p to insert text on to the webpage and a href for the link -->
+<p id = "countries2"><a href="https://www.ubereats.com/gb/location" id="blacklink">View all countries</a>
+</p>
+
+<ul id="five"> <!-- My fifth  unordered list with same stylings,links and IDs -->
+ <li> <a href = "https://www.ubereats.com/au?slr=1" id="black"> Australia</a> </li>
+ <li><a href = "https://www.ubereats.com/be?slr=1" id="black"> Belgium</a></li>
+ <li> <a href = "https://www.ubereats.com/bo?slr=1" id="black">Bolivia</a></li>
+ <li> <a href = "https://www.ubereats.com/ca?slr=1" id="black">Canada</a></li>
+  <li> <a href = "https://www.ubereats.com/cl?slr=1" id="black">Chile</a></li>
+  <li> <a href = "https://www.ubereats.com/cr?slr=1" id="black">Costa Rica</a></li>
+  <li><a href = "https://www.ubereats.com/do?slr=1" id="black"> Dominican Republic</a></li>
+  <li><a href = "https://www.ubereats.com/ec?slr=1" id="black"> Ecaudor</a></li>
+</ul>
+
+  <ul id="six"> <!-- My sixth unordered list with same stylings,links and IDs -->
+ <li> <a href = "https://www.ubereats.com/sv?slr=1" id="black">El Salvador </a></li>
+ <li> <a href = "https://www.ubereats.com/fr?slr=1" id="black">France</a></li>
+ <li> <a href = "https://www.ubereats.com/de?slr=1" id="black">Germany</a></li>
+ <li> <a href = "https://www.ubereats.com/gt?slr=1" id="black">Guatemala</a></li>
+  <li> <a href = "https://www.ubereats.com/ie?slr=1" id="black">Ireland</a></li>
+  <li> <a href = "https://www.ubereats.com/it?slr=1" id="black">Italy</a></li>
+  <li> <a href = "https://www.ubereats.com/jp?slr=1" id="black">Japan</a></li>
+  <li> <a href = "https://www.ubereats.com/ke?slr=1" id="black">Kenya</a> </li>
+</ul>
+
+<ul id="seven"> <!-- My seventh unordered list with same stylings,links and IDs -->
+ <li> <a href = "https://www.ubereats.com/mx?slr=1" id="black">Mexico </a></li>
+ <li> <a href = "https://www.ubereats.com/nl?slr=1" id="black">Netherlands</a></li>
+ <li> <a href = "https://www.ubereats.com/nz?slr=1" id="black">New Zealand</a></li>
+ <li> <a href = "https://www.ubereats.com/pa?slr=1" id="black">Panama</a></li>
+  <li> <a href = "https://www.ubereats.com/pl?slr=1" id="black">Poland</a></li>
+  <li> <a href = "https://www.ubereats.com/pt?slr=1" id="black">Portugal</a></li>
+  <li> <a href = "https://www.ubereats.com/za?slr=1" id="black">South Africa</a></li>
+  <li> <a href = "https://www.ubereats.com/es?slr=1" id="black">Spain </a></li>
+</ul>
+
+<ul id="eight"> <!-- My eighth unordered list with same stylings,links and IDs -->
+ <li> <a href = "https://www.ubereats.com/lk?slr=1" id="black">Sri Lanka </a></li>
+ <li> <a href = "https://www.ubereats.com/se?slr=1" id="black">Sweden</a> </li>
+ <li> <a href = "https://www.ubereats.com/ch?slr=1" id="black">Switzerland</a> </li>
+ <li> <a href = "https://www.ubereats.com/tw?slr=1" id="black">Taiwan (ROC) </a></li>
+  <li> <a href = "https://www.ubereats.com/gb?slr=1" id="black">United Kingdom </a></li>
+  <li> <a href = "https://www.ubereats.com/?slr=1" id="black">United States</a> </li>
+</ul>
+<hr id = line1> <!-- <hr> inserts a horizontal line then i have given it an ID to style it-->
+
+ <!-- I have used <img src> to import 3 social media icons and then i have given them an ID to style it --> 
+  <img src = "UberLogo.png" id="logo2">
+<img src = "appstore.svg" id="appstore">
+<img src = "googleplay.png" id="googleplay">
+
+<ul id="nine"> <!-- My  9th unordered list with same stylings and links but this one has id="reCA" because when you hover over them they underline so i have replicated that for all links with this ID  -->
+ <li> <a href="https://help.uber.com/ubereats/restaurants" id="reCA"> Get help </a></li>
+ <li> <a href="https://merchants.ubereats.com/gb/en/s/signup/" id="reCA">Add your restaurant </a></li>
+ <li> <a href="https://www.uber.com/gb/en/deliver/" id="reCA">Sign up to deliver </a> </li>
+ <li> <a href="https://www.uber.com/gb/en/business/solutions/eats/overview/" id="reCA">Create a business account </a> </li>
+  <li> <a href="https://www.ubereats.com/gb/promo" id="reCA">Promotions </a></li>
+</ul>
+
+  <ul id="ten"> <!-- My  10th unordered list with same stylings and links but this one has id="reCA" because when you hover over them they underline so i have replicated that for all links with this ID  -->
+ <li> <a href="https://www.ubereats.com/gb/near-me" id="reCA">Restaurants near me </a> </li>
+ <li> <a href="https://www.ubereats.com/gb/location" id="reCA">View all cities </a> </li>
+ <li> <a href="https://www.ubereats.com/gb/location#all-countries" id="reCA"> View all countries </a>  </li>
+ <li> <a href="https://www.ubereats.com/gb/pickup/near-me" id="reCA">Pick-up near me</a>   </li>
+  <li> <a href="https://about.ubereats.com/gb/en/" id="reCA">About Uber Eats</a></li>
+  <li> <a href="https://www.ubereats.com/gb?mod=selectLanguage&ps=1" id="english">English  </a></li>
+</ul>
+<hr id = line2> <!--  My second horizontal line but this one is fainter and not all the way accross the webpage  -->
+<footer> <!-- The start of my footer, this is always at the bottom of the page and contains information about the company or things like the authors information. An example of company information is the terms of service  -->
+
+<!-- three social media icons -->
+<img src = "facebook.png" id="facebook">
+<img src = "twitter.png" id="twitter">
+<img src = "instagram.png" id="instagram">
+
+
+<p id = "privacy"> Privacy Policy</p>
+<p id = "terms"> Terms </p>
+<p id = "pricing"> Pricing </p>
+<p id = "sell"> Do not sell my info (California)</p>
+<!-- This one has ID "reC" because the links within the <p> change as you hover over them -->
+<p id="reC">This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" id="reCA"> Privacy Policy </a> and <a href="https://policies.google.com/terms" id="reCA">Terms of Service</a> apply.</p>
+<!--"copyright" id has an icon imported onto the page via the use of the copyright unicode -->
+<p id="copyright"> &#169; 2022 Uber Technologies Inc. </p> 
+</footer> <!-- end of footer and end of webpage contents -->
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

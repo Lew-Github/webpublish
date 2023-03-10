@@ -1,0 +1,560 @@
+/* This keeps everything within the body 100% width & height and also makes sure theirs no padding or gaps within the edges of the webpage */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* @font-face is used to import external fonts and enables them for usage */
+@font-face{
+  font-family:UberNormal;
+  src: url(UberMoveMedium.otf);
+}
+
+@font-face{
+  font-family:UberBold;
+  src: url(UberMoveBold.otf);
+}
+/* This symbol means apply effect to everything and makes sure theirs not any margin or padding by default and also makes everything so that the width cannot exceed 100% */
+
+*{
+    margin:0;
+    padding:0;
+    max-width:100%
+}
+
+/* This keeps the headers position at the top of the screen */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width:100%;
+  background-color: solid;
+}
+
+/* This is the CSS for the three lines image, using left and margin top positions the icon into place */
+#menuicon{
+  height: auto;
+  position: absolute;
+  left: 3%;
+  margin-top: 2%;
+}
+
+/* The Uber logo is styled using height auto because it was already the correct height,margin left was used to add some spacing between the left hand side of the page */
+#UberLogo {
+  width: 9%;
+  height: auto;
+  margin-left:1.5%;
+  position: absolute;
+  left: 5%;
+  margin-top: 2%;
+}
+
+/* The first button has alot of styling, border radius and padding together give it a more round look and Background image url is how i have added the image of the user icon, using background-position to move it */
+#Login {
+  background:white; 
+  color:black;
+  padding:12px;
+  border-radius:110px;
+  width:6.4%;
+  margin-left:1%;
+  margin-right:1%;
+  border:white;
+  position:absolute;
+  right:10%;
+  margin-top:2%;
+  font-size:16px;
+  padding-left: 2%;
+  background-image: url(Usericon.webp);
+  background-position: 10% 50%;
+  background-size:20%;
+  background-repeat: no-repeat;
+  font-family: UberBold;
+}
+
+/* Makes it so it changes colour when you hover over the button*/
+#Login:hover{
+  background-color:lightgrey
+}
+/* Same as Login button but without the background image */
+#Signup {
+  background:black; 
+  color:white;
+  padding:12px;
+  border-style: none;
+  border-radius:110px;
+  width:6%;
+  position:absolute;
+  right:3%;
+  margin-left:1%;
+  margin-right:1%;
+  margin-top:2%;
+  font-size:16px;
+  font-family:UberBold;
+}
+/* Same as login button but slightly decreased the visibility of the button when hovering over it */
+#Signup:hover{
+  background-color: darkgrey;
+  opacity: 0.9;
+}
+
+/* This is used to set the style of my background image, making sure it doesnt repeat the image and setting the sizes as full (100%) */
+.background{
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+
+}
+/*  Setting the positioning and font of the heading 'Order food to your door'*/
+#orderfoodtoyourdoor {
+  position:absolute;
+  top: 37%;
+  left:3%;
+  font-size: 320%;
+  font-family: UberBold
+}
+
+/* Border style removes the border when the attribute is none, the font has been changed and the size of the font increased. Then using padding and background-positioning have added the Pin icon */
+#address {
+  border-style: none;
+  height:7.5%;
+  width:32.5%;
+  position: absolute;
+  top:50%;
+  left: 3%;
+  font-family: UberNormal;
+  font-size: 100%;
+  padding-left:3%;
+  background-image:url("pin.png");
+  background-size:3%;
+  background-repeat:no-repeat;
+  background-position: 3%
+  
+}
+
+/* Similar to the address box but without the icon and is a drop down menu */
+
+#delivery {
+  border-style: none;
+  position:absolute;
+  left:39%;
+  top:50%;
+  height:7.5%;
+  width:12.5%;
+  padding-left:3%;
+  font-family: UberBold;
+  font-size: 100%;
+  
+}
+
+/* This is similar to the other two buttons but it is made bigger and slightly different shape using padding and border radius. I have also given this no border */
+
+#Findfood {
+  background:black;
+  color:white;
+  padding:10px;
+  height: 7.5%;
+  width:7.5%;
+  border-radius:10px;
+  position:absolute;
+  left:52%;
+  top:50%;
+  font-family: UberBold;
+  font-size: 100%;
+  border-style: none;
+  
+       }
+
+/* Created an effect that makes it change color when you hover over it*/
+#Findfood:hover{
+  background-color: darkgrey;
+  opacity:0.9;
+}
+
+/* This is used to style and position the 'Sign in for your recent addresses' link  */
+#signin{
+  position:absolute;
+  left: 3%;
+  top:61%;
+  font-family: UberNormal;
+  font-size:90%;
+ 
+}
+
+/* This CSS is an ID for all the links that i needed to be coloured black whilst still being underline - like the 'Sign in' */
+#blacklink{
+  color: black;
+}
+
+
+/* This Div style is used to position and size the three images equally and all in a row*/
+.threepictures img{
+  overflow: hidden;
+  display: inline-block;
+  margin-top:5%;
+  width:30.5%;
+  height:25%;
+  
+}
+/* This is used to position the first image away from the edge of the page */
+#FeedEmployees{
+  margin-left: 2.7%;
+}
+
+/* Margin left and right increase the gaps for the middle image */
+#YourRestaurant{
+  margin-left: 1.5%;
+  margin-right:1.5%
+}
+/* This moves the 3rd image from the right of the screen by 2% */
+#DeliverwithUber{
+  margin-right:2%;
+}
+
+/* Sets the font and increases the font size of the caption under 'Feed your employees'*/
+#feed{
+  position:absolute;
+  left:2.5%;
+  font-family: UberNormal;
+  font-size:175%
+  
+}
+
+/* Sets the font and increases the font size of the caption under 'Your restaurant'*/
+#your{
+  position:absolute;
+  left:35%;
+  font-family: UberNormal;
+  font-size:175%
+  
+}
+/* Sets the font and increases the font size of the caption under 'Deliver with ubers eats'*/
+#del{
+  position:absolute;
+  right:15.3%;
+  font-family: UberNormal;
+  font-size:175%
+  
+}
+/* Used to position and changes the link color to black */
+#create{
+position:absolute;
+  left:2.5%;
+  font-family: UberNormal;
+  margin-top:3%;
+  color:black
+}
+
+/* Used to position and changes the link color to black */
+#add{
+position:absolute;
+  left:35%;
+  font-family: UberNormal;
+  margin-top:3%;
+  color: black;
+}
+
+/* Used to position and changes the link color to black */
+#todel{
+  position:absolute;
+  right:24.75%;
+  font-family:UberNormal;
+  margin-top:3%;
+  color:black;
+}
+
+/* This is used to position the <h1> tag cities near me and also changes font */
+#near{
+  position:absolute;
+  left:2.5%;
+  font-family:UberNormal;
+  margin-top:10%
+}
+
+/* Used to position and changes the link color to black on the View all 500+ cities */
+#cities{
+  position:absolute;
+  right:2.5%;
+  font-family:UberNormal;
+  margin-top:10%;
+}
+
+/* This CSS is for the live map, used left to create a gap between the side of the page, i have used border-style to remove the border and used height and width to change the size of the live map */
+#map{
+  margin-top:15%;
+  height:50%;
+  width:95%;
+  position:absolute;
+  left:2.5%;
+  border-style:none
+  
+}
+
+/* This CSS is an ID for all the links i needed to be black but with no text decoration like underline  */
+#black {
+  color:black;
+  text-decoration:none
+}
+
+/* list-style-type removes the natural bullet points from an unordered list and line-height increases the spacing between each list item, I then used position absolute to lock the list into place. I then used margin-left and margin-top to place the list where i wanted it to be*/
+#one{
+  list-style-type:none;
+  position:absolute;
+  margin-top:42.5%;
+  margin-left:2.5%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+/* list-style-type removes the natural bullet points from an unordered list and line-height increases the spacing between each list item, I then used position absolute to lock the list into place. I then used margin-left and margin-top to place the list where i wanted it to be*/
+#two{
+  list-style-type:none;
+  position:absolute;
+  margin-top:42.5%;
+  margin-left:25%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+/* list-style-type removes the natural bullet points from an unordered list and line-height increases the spacing between each list item, I then used position absolute to lock the list into place. I then used margin-left and margin-top to place the list where i wanted it to be*/
+#three{
+  list-style-type:none;
+  position:absolute;
+  margin-top:42.5%;
+  margin-left:50%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+/* list-style-type removes the natural bullet points from an unordered list and line-height increases the spacing between each list item, I then used position absolute to lock the list into place. I then used margin-left and margin-top to place the list where i wanted it to be*/
+#four{
+  list-style-type:none;
+  position:absolute;
+  margin-top:42.5%;
+  margin-left:75%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+/* #Countries is the CSS for my <h1> Countries with uber eats </h1> */
+#countries{
+  position:absolute;
+  left:2.5%;
+  font-family:UberBold;
+  margin-top:64%;
+}
+/* #Countries2 is the CSS used to position and change the font for the link 'View all countries'  */
+#countries2{
+  position:absolute;
+  right:2.5%;
+  font-family:UberNormal;
+  margin-top:64%;
+}
+/* This is similar code as my first 4 lists but this section of lists is further down the page */
+#five{
+  list-style-type:none;
+  position:absolute;
+  margin-top:67%;
+  margin-left:2.5%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+/* This is similar code as my first 4 lists but this section of lists is further down the page */
+#six{
+  list-style-type:none;
+  position:absolute;
+  margin-top:67%;
+  margin-left:25%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+/* This is similar code as my first 4 lists but this section of lists is further down the page */
+#seven{
+  list-style-type:none;
+  position:absolute;
+  margin-top:67%;
+  margin-left:50%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+/* This is similar code as my first 4 lists but this section of lists is further down the page */
+#eight{
+  list-style-type:none;
+  position:absolute;
+  margin-top:67%;
+  margin-left:75%;
+  line-height:325%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+
+/* This is the CSS for my first horizontal line, using opacity makes the line more transparent */
+#line1{
+  margin-top:96%;
+  opacity: 0.3;
+  
+}
+
+/* This is used for my second logo, which is towards the bottom of the page and slightly smaller */
+#logo2{
+  position:absolute;
+  width:9%;
+  height:auto;
+  left:2%;
+  margin-top:4%;
+}
+ 
+/* This is used to position my app store image, using the left:2% with position absolute keeps all my contect on the left aligned vertically */
+#appstore{
+  position:absolute;
+  margin-top:16%;
+  left:2%;
+  
+}
+
+/* Similiar to app store except this is used to position it next to the app store image*/
+#googleplay {
+  position:absolute;
+  width:9%;
+  left:12%;
+  margin-top:16%;
+  
+}
+/* More lists using a similar CSS code to all the others */
+#nine{
+  list-style-type:none;
+  position:absolute;
+  margin-top:3%;
+  margin-left:50%;
+  line-height:230%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+/* More lists using a similar CSS code to all the others */
+#ten {
+  list-style-type:none;
+  position:absolute;
+  margin-top:3%;
+  margin-left:75%;
+  line-height:230%;
+  font-family: UberMoveText, sans-serif;
+  font-size:100%
+}
+
+
+/* This faint line is the start of my footer and i have used margin-left and right to center it to the middle of the screen, I then used width to make it so it did not reach either end of the screen  */
+#line2{
+  margin-top:22%;
+  margin-left: 2%;
+  margin-right:2%;
+  width:96%;
+  opacity:0.1
+  
+  
+}
+
+
+/* These Three icons, Facebook, Twitter and Instagram are in the footer and I used width:1.1% to make the icons smaller than the original size */
+#facebook{
+  position:absolute;
+  margin-top:2%;
+  margin-left: 1.9%;
+  width:1.1%;
+}
+
+#twitter {
+  position:absolute;
+  margin-top:2%;
+  margin-left: 4.7%;
+  width:1.1%;
+}
+
+#instagram {
+  position:absolute;
+  margin-top:2%;
+  margin-left: 7.5%;
+  width:1.1%;
+}
+
+/* This ID is for the <p> Privacy </p> within the footer, again using position absolute and margin-left, to position them to the right */
+#privacy {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 66%;
+}
+
+#terms {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 75%;
+}
+
+#pricing {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 80%;
+}
+
+#sell {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 85%;
+}
+
+#reC {
+  position:absolute;
+  margin-top:4%;
+  margin-left:40%;
+}
+
+/* #reCA is used for all the links i have imported but takes away the underline effect through text decoration none, and i have also changed the color from default blue link colour to black  */
+#reCA{
+  
+  text-decoration: none;
+  color: black;
+}
+/* This section all the links with this ID to underline when you hover over the link */
+#reCA:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*This is used to position the copyright section of the footer*/
+#copyright {
+  position:absolute;
+  margin-top:4%;
+  margin-left:85%;
+}
+
+/* This section of the list has been given a specific ID so i could change the English to have a translate icon using the background image. I then used background-size to change the size of the image and added padding to move the word English to the right so it wasnt covering the icon  */
+#english {
+  background-image:url(translate.svg);
+  background-size:25%;
+  background-repeat: no-repeat;
+  padding-left:15%;
+  color: black;
+  text-decoration: none;
+}
+
+/* Same as the reCA:hover section but with its own ID */
+#english:hover{
+  text-decoration: underline;
+  color: black;
+}
+
